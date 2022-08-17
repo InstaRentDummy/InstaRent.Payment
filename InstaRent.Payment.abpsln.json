@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "InstaRent.Payment": {
+      "path": "InstaRent.Payment.abpmdl.json"
+    }
+  }
+}

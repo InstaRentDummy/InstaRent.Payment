@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>InstaRent.Payment</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="5.3.3" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="5.3.3" />
+    <ProjectReference Include="..\InstaRent.Payment.Application.Contracts\InstaRent.Payment.Application.Contracts.csproj" />
+    <ProjectReference Include="..\InstaRent.Payment.Domain\InstaRent.Payment.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

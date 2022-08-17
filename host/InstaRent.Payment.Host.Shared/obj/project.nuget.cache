@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "9fYk5l0w5Sqy0mdtZmNePb7PUrVk1gNyh0o61Emwodv9MbKoilMKlUUlJMBcRilJFcCG6M+GjlHdptDvWPJ9PQ==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\School\\InstaRent\\Payment\\host\\InstaRent.Payment.Host.Shared\\InstaRent.Payment.Host.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\arkar\\.nuget\\packages\\configureawait.fody\\3.3.1\\configureawait.fody.3.3.1.nupkg.sha512",
+    "C:\\Users\\arkar\\.nuget\\packages\\fody\\6.5.3\\fody.6.5.3.nupkg.sha512",
+    "C:\\Users\\arkar\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\arkar\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

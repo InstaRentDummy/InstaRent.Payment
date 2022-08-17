@@ -1,0 +1,79 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "InstaRent.Payment.Domain.Shared": {
+      "path": "src/InstaRent.Payment.Domain.Shared/InstaRent.Payment.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "InstaRent.Payment.Domain": {
+      "path": "src/InstaRent.Payment.Domain/InstaRent.Payment.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "InstaRent.Payment.Application.Contracts": {
+      "path": "src/InstaRent.Payment.Application.Contracts/InstaRent.Payment.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "InstaRent.Payment.Application": {
+      "path": "src/InstaRent.Payment.Application/InstaRent.Payment.Application.abppkg.json",
+      "folder": "src"
+    },
+    "InstaRent.Payment.EntityFrameworkCore": {
+      "path": "src/InstaRent.Payment.EntityFrameworkCore/InstaRent.Payment.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "InstaRent.Payment.MongoDB": {
+      "path": "src/InstaRent.Payment.MongoDB/InstaRent.Payment.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "InstaRent.Payment.HttpApi": {
+      "path": "src/InstaRent.Payment.HttpApi/InstaRent.Payment.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "InstaRent.Payment.HttpApi.Client": {
+      "path": "src/InstaRent.Payment.HttpApi.Client/InstaRent.Payment.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "InstaRent.Payment.TestBase": {
+      "path": "test/InstaRent.Payment.TestBase/InstaRent.Payment.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "InstaRent.Payment.EntityFrameworkCore.Tests": {
+      "path": "test/InstaRent.Payment.EntityFrameworkCore.Tests/InstaRent.Payment.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "InstaRent.Payment.MongoDB.Tests": {
+      "path": "test/InstaRent.Payment.MongoDB.Tests/InstaRent.Payment.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "InstaRent.Payment.Domain.Tests": {
+      "path": "test/InstaRent.Payment.Domain.Tests/InstaRent.Payment.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "InstaRent.Payment.Application.Tests": {
+      "path": "test/InstaRent.Payment.Application.Tests/InstaRent.Payment.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "InstaRent.Payment.HttpApi.Host": {
+      "path": "host/InstaRent.Payment.HttpApi.Host/InstaRent.Payment.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "InstaRent.Payment.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/InstaRent.Payment.HttpApi.Client.ConsoleTestApp/InstaRent.Payment.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "InstaRent.Payment.IdentityServer": {
+      "path": "host/InstaRent.Payment.IdentityServer/InstaRent.Payment.IdentityServer.abppkg.json",
+      "folder": "host"
+    },
+    "InstaRent.Payment.Host.Shared": {
+      "path": "host/InstaRent.Payment.Host.Shared/InstaRent.Payment.Host.Shared.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

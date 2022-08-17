@@ -1,0 +1,14 @@
+D:\Projects\School\InstaRent\Payment\src\InstaRent.Payment.Application.Contracts\bin\Debug\netstandard2.0\InstaRent.Payment.Application.Contracts.deps.json
+D:\Projects\School\InstaRent\Payment\src\InstaRent.Payment.Application.Contracts\bin\Debug\netstandard2.0\InstaRent.Payment.Application.Contracts.dll
+D:\Projects\School\InstaRent\Payment\src\InstaRent.Payment.Application.Contracts\bin\Debug\netstandard2.0\InstaRent.Payment.Application.Contracts.pdb
+D:\Projects\School\InstaRent\Payment\src\InstaRent.Payment.Application.Contracts\bin\Debug\netstandard2.0\InstaRent.Payment.Domain.Shared.dll
+D:\Projects\School\InstaRent\Payment\src\InstaRent.Payment.Application.Contracts\bin\Debug\netstandard2.0\InstaRent.Payment.Domain.Shared.pdb
+D:\Projects\School\InstaRent\Payment\src\InstaRent.Payment.Application.Contracts\obj\Debug\netstandard2.0\InstaRent.Payment.Application.Contracts.csproj.AssemblyReference.cache
+D:\Projects\School\InstaRent\Payment\src\InstaRent.Payment.Application.Contracts\obj\Debug\netstandard2.0\InstaRent.Payment.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\School\InstaRent\Payment\src\InstaRent.Payment.Application.Contracts\obj\Debug\netstandard2.0\InstaRent.Payment.Application.Contracts.AssemblyInfoInputs.cache
+D:\Projects\School\InstaRent\Payment\src\InstaRent.Payment.Application.Contracts\obj\Debug\netstandard2.0\InstaRent.Payment.Application.Contracts.AssemblyInfo.cs
+D:\Projects\School\InstaRent\Payment\src\InstaRent.Payment.Application.Contracts\obj\Debug\netstandard2.0\InstaRent.Payment.Application.Contracts.csproj.CoreCompileInputs.cache
+D:\Projects\School\InstaRent\Payment\src\InstaRent.Payment.Application.Contracts\obj\Debug\netstandard2.0\InstaRent.Payment.Application.Contracts.csproj.Fody.CopyLocal.cache
+D:\Projects\School\InstaRent\Payment\src\InstaRent.Payment.Application.Contracts\obj\Debug\netstandard2.0\InstaRent.Payment.Application.Contracts.csproj.CopyComplete
+D:\Projects\School\InstaRent\Payment\src\InstaRent.Payment.Application.Contracts\obj\Debug\netstandard2.0\InstaRent.Payment.Application.Contracts.dll
+D:\Projects\School\InstaRent\Payment\src\InstaRent.Payment.Application.Contracts\obj\Debug\netstandard2.0\InstaRent.Payment.Application.Contracts.pdb

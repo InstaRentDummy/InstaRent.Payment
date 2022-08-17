@@ -1,0 +1,458 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.EntityFrameworkCore.Tests\\InstaRent.Payment.EntityFrameworkCore.Tests.csproj": {}
+  },
+  "projects": {
+    "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj": {
+      "version": "0.1.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj",
+        "projectName": "InstaRent.Payment.Domain.Shared",
+        "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj",
+        "packagesPath": "C:\\Users\\arkar\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Projects\\School\\InstaRent\\Payment\\NuGet.Config",
+          "C:\\Users\\arkar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/blazorise/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "ConfigureAwait.Fody": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.5.3, )"
+            },
+            "Microsoft.Extensions.FileProviders.Embedded": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Volo.Abp.Validation": {
+              "target": "Package",
+              "version": "[5.3.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj": {
+      "version": "0.1.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj",
+        "projectName": "InstaRent.Payment.Domain",
+        "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj",
+        "packagesPath": "C:\\Users\\arkar\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Projects\\School\\InstaRent\\Payment\\NuGet.Config",
+          "C:\\Users\\arkar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/blazorise/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj": {
+                "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "ConfigureAwait.Fody": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.5.3, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Volo.Abp.Ddd.Domain": {
+              "target": "Package",
+              "version": "[5.3.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.EntityFrameworkCore\\InstaRent.Payment.EntityFrameworkCore.csproj": {
+      "version": "0.1.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.EntityFrameworkCore\\InstaRent.Payment.EntityFrameworkCore.csproj",
+        "projectName": "InstaRent.Payment.EntityFrameworkCore",
+        "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.EntityFrameworkCore\\InstaRent.Payment.EntityFrameworkCore.csproj",
+        "packagesPath": "C:\\Users\\arkar\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.EntityFrameworkCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Projects\\School\\InstaRent\\Payment\\NuGet.Config",
+          "C:\\Users\\arkar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/blazorise/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj": {
+                "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "ConfigureAwait.Fody": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.5.3, )"
+            },
+            "Volo.Abp.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.3.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.EntityFrameworkCore.Tests\\InstaRent.Payment.EntityFrameworkCore.Tests.csproj": {
+      "version": "0.1.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.EntityFrameworkCore.Tests\\InstaRent.Payment.EntityFrameworkCore.Tests.csproj",
+        "projectName": "InstaRent.Payment.EntityFrameworkCore.Tests",
+        "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.EntityFrameworkCore.Tests\\InstaRent.Payment.EntityFrameworkCore.Tests.csproj",
+        "packagesPath": "C:\\Users\\arkar\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.EntityFrameworkCore.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Projects\\School\\InstaRent\\Payment\\NuGet.Config",
+          "C:\\Users\\arkar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/blazorise/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.EntityFrameworkCore\\InstaRent.Payment.EntityFrameworkCore.csproj": {
+                "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.EntityFrameworkCore\\InstaRent.Payment.EntityFrameworkCore.csproj"
+              },
+              "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.TestBase\\InstaRent.Payment.TestBase.csproj": {
+                "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.TestBase\\InstaRent.Payment.TestBase.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "ConfigureAwait.Fody": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.5.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.2.0, )"
+            },
+            "Volo.Abp.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.3.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.TestBase\\InstaRent.Payment.TestBase.csproj": {
+      "version": "0.1.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.TestBase\\InstaRent.Payment.TestBase.csproj",
+        "projectName": "InstaRent.Payment.TestBase",
+        "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.TestBase\\InstaRent.Payment.TestBase.csproj",
+        "packagesPath": "C:\\Users\\arkar\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.TestBase\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Projects\\School\\InstaRent\\Payment\\NuGet.Config",
+          "C:\\Users\\arkar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/blazorise/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj": {
+                "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "ConfigureAwait.Fody": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.5.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.2.0, )"
+            },
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Shouldly": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Volo.Abp.Authorization": {
+              "target": "Package",
+              "version": "[5.3.3, )"
+            },
+            "Volo.Abp.Autofac": {
+              "target": "Package",
+              "version": "[5.3.3, )"
+            },
+            "Volo.Abp.TestBase": {
+              "target": "Package",
+              "version": "[5.3.3, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.extensibility.execution": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
