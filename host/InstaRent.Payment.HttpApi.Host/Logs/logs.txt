@@ -762,3 +762,252 @@ Autofac.Core.DependencyResolutionException: An exception was thrown while activa
 2022-08-17 21:06:58.591 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44322/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 7.1895ms
 2022-08-17 21:06:58.690 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44322/swagger/v1/swagger.json - -
 2022-08-17 21:06:58.834 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44322/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 143.2652ms
+2022-08-18 11:41:32.265 +08:00 [INF] Starting web host.
+2022-08-18 11:41:42.315 +08:00 [INF] Loaded ABP modules:
+2022-08-18 11:41:42.317 +08:00 [INF] - InstaRent.Payment.PaymentHttpApiHostModule
+2022-08-18 11:41:42.317 +08:00 [INF]   - InstaRent.Payment.PaymentApplicationModule
+2022-08-18 11:41:42.317 +08:00 [INF]     - InstaRent.Payment.PaymentDomainModule
+2022-08-18 11:41:42.317 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2022-08-18 11:41:42.317 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2022-08-18 11:41:42.317 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2022-08-18 11:41:42.317 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-08-18 11:41:42.317 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-08-18 11:41:42.317 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-08-18 11:41:42.317 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-08-18 11:41:42.317 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-08-18 11:41:42.317 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2022-08-18 11:41:42.317 +08:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2022-08-18 11:41:42.317 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationModule
+2022-08-18 11:41:42.317 +08:00 [INF]                 - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-08-18 11:41:42.317 +08:00 [INF]                 - Volo.Abp.Settings.AbpSettingsModule
+2022-08-18 11:41:42.317 +08:00 [INF]                   - Volo.Abp.Security.AbpSecurityModule
+2022-08-18 11:41:42.317 +08:00 [INF]                   - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-08-18 11:41:42.317 +08:00 [INF]           - Volo.Abp.Threading.AbpThreadingModule
+2022-08-18 11:41:42.317 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-08-18 11:41:42.317 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2022-08-18 11:41:42.317 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2022-08-18 11:41:42.317 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-08-18 11:41:42.317 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-08-18 11:41:42.317 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-08-18 11:41:42.317 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-08-18 11:41:42.317 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-08-18 11:41:42.317 +08:00 [INF]       - InstaRent.Payment.PaymentDomainSharedModule
+2022-08-18 11:41:42.317 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2022-08-18 11:41:42.317 +08:00 [INF]     - InstaRent.Payment.PaymentApplicationContractsModule
+2022-08-18 11:41:42.317 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-08-18 11:41:42.317 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-08-18 11:41:42.317 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-08-18 11:41:42.317 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2022-08-18 11:41:42.317 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-08-18 11:41:42.317 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2022-08-18 11:41:42.317 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-08-18 11:41:42.317 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-08-18 11:41:42.317 +08:00 [INF]   - InstaRent.Payment.PaymentHttpApiModule
+2022-08-18 11:41:42.317 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-08-18 11:41:42.317 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-08-18 11:41:42.317 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2022-08-18 11:41:42.317 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2022-08-18 11:41:42.317 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-08-18 11:41:42.317 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-08-18 11:41:42.317 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-08-18 11:41:42.317 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2022-08-18 11:41:42.317 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-08-18 11:41:42.317 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-08-18 11:41:42.317 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-08-18 11:41:42.317 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-08-18 11:41:42.317 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-08-18 11:41:42.317 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-08-18 11:41:42.317 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-08-18 11:41:42.317 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-08-18 11:41:42.317 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-08-18 11:41:42.317 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-08-18 11:41:42.317 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-08-18 11:41:42.317 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2022-08-18 11:41:42.317 +08:00 [INF]     - Volo.Abp.Caching.AbpCachingModule
+2022-08-18 11:41:42.317 +08:00 [INF]       - Volo.Abp.Serialization.AbpSerializationModule
+2022-08-18 11:41:42.317 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2022-08-18 11:41:42.317 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2022-08-18 11:41:43.354 +08:00 [INF] User profile is available. Using 'C:\Users\arkar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-08-18 11:41:43.431 +08:00 [INF] Initialized all ABP modules.
+2022-08-18 11:41:43.548 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 11:41:43.548 +08:00 [INF] Hosting environment: Development
+2022-08-18 11:41:43.548 +08:00 [INF] Content root path: D:\Projects\School\InstaRent\Payment\host\InstaRent.Payment.HttpApi.Host\
+2022-08-18 11:41:43.648 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44322/ - -
+2022-08-18 11:41:44.116 +08:00 [INF] Executing endpoint 'InstaRent.Payment.Controllers.HomeController.Index (InstaRent.Payment.HttpApi.Host)'
+2022-08-18 11:41:44.157 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller InstaRent.Payment.Controllers.HomeController (InstaRent.Payment.HttpApi.Host).
+2022-08-18 11:41:44.189 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-08-18 11:41:44.192 +08:00 [INF] Executed action InstaRent.Payment.Controllers.HomeController.Index (InstaRent.Payment.HttpApi.Host) in 32.4221ms
+2022-08-18 11:41:44.193 +08:00 [INF] Executed endpoint 'InstaRent.Payment.Controllers.HomeController.Index (InstaRent.Payment.HttpApi.Host)'
+2022-08-18 11:41:44.231 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44322/swagger/index.html - -
+2022-08-18 11:41:44.236 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44322/ - - - 302 - - 588.2448ms
+2022-08-18 11:41:44.572 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44322/swagger/index.html - - - 200 - text/html;charset=utf-8 341.0539ms
+2022-08-18 11:41:44.586 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44322/_framework/aspnetcore-browser-refresh.js - -
+2022-08-18 11:41:44.591 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44322/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 4.3546ms
+2022-08-18 11:41:44.700 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44322/swagger/v1/swagger.json - -
+2022-08-18 11:41:44.834 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44322/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 133.8772ms
+2022-08-18 11:49:48.886 +08:00 [INF] Starting web host.
+2022-08-18 11:49:57.216 +08:00 [INF] Loaded ABP modules:
+2022-08-18 11:49:57.217 +08:00 [INF] - InstaRent.Payment.PaymentHttpApiHostModule
+2022-08-18 11:49:57.217 +08:00 [INF]   - InstaRent.Payment.PaymentApplicationModule
+2022-08-18 11:49:57.217 +08:00 [INF]     - InstaRent.Payment.PaymentDomainModule
+2022-08-18 11:49:57.217 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2022-08-18 11:49:57.217 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2022-08-18 11:49:57.217 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2022-08-18 11:49:57.217 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-08-18 11:49:57.217 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-08-18 11:49:57.217 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-08-18 11:49:57.217 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-08-18 11:49:57.217 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-08-18 11:49:57.217 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2022-08-18 11:49:57.217 +08:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2022-08-18 11:49:57.217 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationModule
+2022-08-18 11:49:57.217 +08:00 [INF]                 - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-08-18 11:49:57.217 +08:00 [INF]                 - Volo.Abp.Settings.AbpSettingsModule
+2022-08-18 11:49:57.217 +08:00 [INF]                   - Volo.Abp.Security.AbpSecurityModule
+2022-08-18 11:49:57.217 +08:00 [INF]                   - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-08-18 11:49:57.217 +08:00 [INF]           - Volo.Abp.Threading.AbpThreadingModule
+2022-08-18 11:49:57.217 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-08-18 11:49:57.217 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2022-08-18 11:49:57.217 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2022-08-18 11:49:57.217 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-08-18 11:49:57.217 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-08-18 11:49:57.217 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-08-18 11:49:57.217 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-08-18 11:49:57.217 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-08-18 11:49:57.217 +08:00 [INF]       - InstaRent.Payment.PaymentDomainSharedModule
+2022-08-18 11:49:57.217 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2022-08-18 11:49:57.217 +08:00 [INF]     - InstaRent.Payment.PaymentApplicationContractsModule
+2022-08-18 11:49:57.217 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-08-18 11:49:57.217 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-08-18 11:49:57.217 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-08-18 11:49:57.217 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2022-08-18 11:49:57.217 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-08-18 11:49:57.217 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2022-08-18 11:49:57.217 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-08-18 11:49:57.217 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-08-18 11:49:57.217 +08:00 [INF]   - InstaRent.Payment.PaymentHttpApiModule
+2022-08-18 11:49:57.217 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-08-18 11:49:57.217 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-08-18 11:49:57.217 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2022-08-18 11:49:57.217 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2022-08-18 11:49:57.217 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-08-18 11:49:57.217 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-08-18 11:49:57.217 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-08-18 11:49:57.217 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2022-08-18 11:49:57.217 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-08-18 11:49:57.218 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-08-18 11:49:57.218 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-08-18 11:49:57.218 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-08-18 11:49:57.218 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-08-18 11:49:57.218 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-08-18 11:49:57.218 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-08-18 11:49:57.218 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-08-18 11:49:57.218 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-08-18 11:49:57.218 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-08-18 11:49:57.218 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-08-18 11:49:57.218 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2022-08-18 11:49:57.218 +08:00 [INF]     - Volo.Abp.Caching.AbpCachingModule
+2022-08-18 11:49:57.218 +08:00 [INF]       - Volo.Abp.Serialization.AbpSerializationModule
+2022-08-18 11:49:57.218 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2022-08-18 11:49:57.218 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2022-08-18 11:49:57.857 +08:00 [INF] User profile is available. Using 'C:\Users\arkar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-08-18 11:49:57.913 +08:00 [INF] Initialized all ABP modules.
+2022-08-18 11:49:57.990 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 11:49:57.990 +08:00 [INF] Hosting environment: Development
+2022-08-18 11:49:57.990 +08:00 [INF] Content root path: D:\Projects\School\InstaRent\Payment\host\InstaRent.Payment.HttpApi.Host\
+2022-08-18 11:49:58.030 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44322/ - -
+2022-08-18 11:49:58.368 +08:00 [INF] Executing endpoint 'InstaRent.Payment.Controllers.HomeController.Index (InstaRent.Payment.HttpApi.Host)'
+2022-08-18 11:49:58.388 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller InstaRent.Payment.Controllers.HomeController (InstaRent.Payment.HttpApi.Host).
+2022-08-18 11:49:58.432 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-08-18 11:49:58.437 +08:00 [INF] Executed action InstaRent.Payment.Controllers.HomeController.Index (InstaRent.Payment.HttpApi.Host) in 45.6016ms
+2022-08-18 11:49:58.437 +08:00 [INF] Executed endpoint 'InstaRent.Payment.Controllers.HomeController.Index (InstaRent.Payment.HttpApi.Host)'
+2022-08-18 11:49:58.455 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44322/swagger/index.html - -
+2022-08-18 11:49:58.468 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44322/ - - - 302 - - 438.8085ms
+2022-08-18 11:49:58.591 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44322/swagger/index.html - - - 200 - text/html;charset=utf-8 135.1949ms
+2022-08-18 11:49:58.601 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44322/_framework/aspnetcore-browser-refresh.js - -
+2022-08-18 11:49:58.605 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44322/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 3.8562ms
+2022-08-18 11:49:58.708 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44322/swagger/v1/swagger.json - -
+2022-08-18 11:49:58.823 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44322/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 114.9910ms
+2022-08-18 11:50:17.556 +08:00 [INF] Starting web host.
+2022-08-18 11:50:19.510 +08:00 [INF] Loaded ABP modules:
+2022-08-18 11:50:19.511 +08:00 [INF] - InstaRent.Payment.PaymentHttpApiHostModule
+2022-08-18 11:50:19.511 +08:00 [INF]   - InstaRent.Payment.PaymentApplicationModule
+2022-08-18 11:50:19.511 +08:00 [INF]     - InstaRent.Payment.PaymentDomainModule
+2022-08-18 11:50:19.511 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2022-08-18 11:50:19.511 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2022-08-18 11:50:19.511 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2022-08-18 11:50:19.511 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-08-18 11:50:19.511 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-08-18 11:50:19.511 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-08-18 11:50:19.511 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-08-18 11:50:19.511 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-08-18 11:50:19.511 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2022-08-18 11:50:19.511 +08:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2022-08-18 11:50:19.511 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationModule
+2022-08-18 11:50:19.511 +08:00 [INF]                 - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-08-18 11:50:19.511 +08:00 [INF]                 - Volo.Abp.Settings.AbpSettingsModule
+2022-08-18 11:50:19.511 +08:00 [INF]                   - Volo.Abp.Security.AbpSecurityModule
+2022-08-18 11:50:19.511 +08:00 [INF]                   - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-08-18 11:50:19.511 +08:00 [INF]           - Volo.Abp.Threading.AbpThreadingModule
+2022-08-18 11:50:19.511 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-08-18 11:50:19.511 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2022-08-18 11:50:19.511 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2022-08-18 11:50:19.511 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-08-18 11:50:19.511 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-08-18 11:50:19.511 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-08-18 11:50:19.511 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-08-18 11:50:19.511 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-08-18 11:50:19.511 +08:00 [INF]       - InstaRent.Payment.PaymentDomainSharedModule
+2022-08-18 11:50:19.511 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2022-08-18 11:50:19.511 +08:00 [INF]     - InstaRent.Payment.PaymentApplicationContractsModule
+2022-08-18 11:50:19.511 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-08-18 11:50:19.511 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-08-18 11:50:19.511 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-08-18 11:50:19.511 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2022-08-18 11:50:19.511 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-08-18 11:50:19.511 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2022-08-18 11:50:19.511 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-08-18 11:50:19.511 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-08-18 11:50:19.511 +08:00 [INF]   - InstaRent.Payment.PaymentHttpApiModule
+2022-08-18 11:50:19.511 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-08-18 11:50:19.511 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-08-18 11:50:19.511 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2022-08-18 11:50:19.511 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2022-08-18 11:50:19.511 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-08-18 11:50:19.511 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-08-18 11:50:19.511 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-08-18 11:50:19.511 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2022-08-18 11:50:19.511 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-08-18 11:50:19.511 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-08-18 11:50:19.511 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-08-18 11:50:19.511 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-08-18 11:50:19.511 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-08-18 11:50:19.511 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-08-18 11:50:19.511 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-08-18 11:50:19.511 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-08-18 11:50:19.511 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-08-18 11:50:19.511 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-08-18 11:50:19.511 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-08-18 11:50:19.511 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2022-08-18 11:50:19.511 +08:00 [INF]     - Volo.Abp.Caching.AbpCachingModule
+2022-08-18 11:50:19.511 +08:00 [INF]       - Volo.Abp.Serialization.AbpSerializationModule
+2022-08-18 11:50:19.511 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2022-08-18 11:50:19.511 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2022-08-18 11:50:19.945 +08:00 [INF] User profile is available. Using 'C:\Users\arkar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-08-18 11:50:20.026 +08:00 [INF] Initialized all ABP modules.
+2022-08-18 11:50:20.113 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 11:50:20.113 +08:00 [INF] Hosting environment: Development
+2022-08-18 11:50:20.113 +08:00 [INF] Content root path: D:\Projects\School\InstaRent\Payment\host\InstaRent.Payment.HttpApi.Host\
+2022-08-18 11:50:20.150 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44322/ - -
+2022-08-18 11:50:20.358 +08:00 [INF] Executing endpoint 'InstaRent.Payment.Controllers.HomeController.Index (InstaRent.Payment.HttpApi.Host)'
+2022-08-18 11:50:20.378 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller InstaRent.Payment.Controllers.HomeController (InstaRent.Payment.HttpApi.Host).
+2022-08-18 11:50:20.409 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-08-18 11:50:20.413 +08:00 [INF] Executed action InstaRent.Payment.Controllers.HomeController.Index (InstaRent.Payment.HttpApi.Host) in 31.5799ms
+2022-08-18 11:50:20.413 +08:00 [INF] Executed endpoint 'InstaRent.Payment.Controllers.HomeController.Index (InstaRent.Payment.HttpApi.Host)'
+2022-08-18 11:50:20.434 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44322/swagger/index.html - -
+2022-08-18 11:50:20.448 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44322/ - - - 302 - - 299.0518ms
+2022-08-18 11:50:20.577 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44322/swagger/index.html - - - 200 - text/html;charset=utf-8 143.2084ms
+2022-08-18 11:50:20.583 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44322/_framework/aspnetcore-browser-refresh.js - -
+2022-08-18 11:50:20.586 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44322/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 3.2765ms
+2022-08-18 11:50:20.686 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44322/swagger/v1/swagger.json - -
+2022-08-18 11:50:20.815 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44322/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 129.6310ms
