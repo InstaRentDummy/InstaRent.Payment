@@ -8,17 +8,17 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = InstaRent.Payment
 build_property.RootNamespace = InstaRent.Payment
-build_property.ProjectDir = D:\Projects\School\InstaRent\Payment\host\InstaRent.Payment.IdentityServer\
+build_property.ProjectDir = D:\Projects\SchoolProject\InstaRent\Payment\host\InstaRent.Payment.IdentityServer\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = D:\Projects\School\InstaRent\Payment\host\InstaRent.Payment.IdentityServer
+build_property.MSBuildProjectDirectory = D:\Projects\SchoolProject\InstaRent\Payment\host\InstaRent.Payment.IdentityServer
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Projects/School/InstaRent/Payment/host/InstaRent.Payment.IdentityServer/Pages/Index.cshtml]
+[D:/Projects/SchoolProject/InstaRent/Payment/host/InstaRent.Payment.IdentityServer/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/School/InstaRent/Payment/host/InstaRent.Payment.IdentityServer/Pages/_ViewImports.cshtml]
+[D:/Projects/SchoolProject/InstaRent/Payment/host/InstaRent.Payment.IdentityServer/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

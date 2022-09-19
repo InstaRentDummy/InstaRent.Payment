@@ -69,11 +69,11 @@
             },
             "Volo.Abp.Authorization": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.Ddd.Application.Contracts": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             }
           },
           "imports": [
@@ -155,7 +155,7 @@
             },
             "Volo.Abp.Validation": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             }
           },
           "imports": [
@@ -229,6 +229,20 @@
               "target": "Package",
               "version": "[6.5.3, )"
             },
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.21.5, )"
+            },
+            "Grpc.Net.ClientFactory": {
+              "target": "Package",
+              "version": "[2.48.0, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.48.1, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -237,7 +251,7 @@
             },
             "Volo.Abp.Http.Client": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             }
           },
           "imports": [

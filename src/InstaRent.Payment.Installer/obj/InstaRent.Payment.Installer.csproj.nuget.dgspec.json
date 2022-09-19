@@ -59,11 +59,11 @@
             },
             "Volo.Abp.Studio.ModuleInstaller": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.VirtualFileSystem": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             }
           },
           "imports": [

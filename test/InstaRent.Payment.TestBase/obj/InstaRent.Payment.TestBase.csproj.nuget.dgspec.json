@@ -69,7 +69,7 @@
             },
             "Volo.Abp.Validation": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             }
           },
           "imports": [
@@ -151,7 +151,7 @@
             },
             "Volo.Abp.Ddd.Domain": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             }
           },
           "imports": [
@@ -239,15 +239,15 @@
             },
             "Volo.Abp.Authorization": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.Autofac": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.TestBase": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "xunit": {
               "target": "Package",

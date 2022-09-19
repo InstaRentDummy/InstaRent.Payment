@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.EntityFrameworkCore.Tests\\InstaRent.Payment.EntityFrameworkCore.Tests.csproj": {}
+    "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\test\\InstaRent.Payment.EntityFrameworkCore.Tests\\InstaRent.Payment.EntityFrameworkCore.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj": {
+    "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj": {
       "version": "0.1.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj",
+        "projectUniqueName": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj",
         "projectName": "InstaRent.Payment.Domain.Shared",
-        "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj",
+        "projectPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj",
         "packagesPath": "C:\\Users\\arkar\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\obj\\",
+        "outputPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\Projects\\School\\InstaRent\\Payment\\NuGet.Config",
+          "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\NuGet.Config",
           "C:\\Users\\arkar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -69,7 +69,7 @@
             },
             "Volo.Abp.Validation": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             }
           },
           "imports": [
@@ -86,20 +86,20 @@
         }
       }
     },
-    "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj": {
+    "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj": {
       "version": "0.1.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj",
+        "projectUniqueName": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj",
         "projectName": "InstaRent.Payment.Domain",
-        "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj",
+        "projectPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj",
         "packagesPath": "C:\\Users\\arkar\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\obj\\",
+        "outputPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\Projects\\School\\InstaRent\\Payment\\NuGet.Config",
+          "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\NuGet.Config",
           "C:\\Users\\arkar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -116,8 +116,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj": {
-                "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj"
+              "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj": {
+                "projectPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj"
               }
             }
           }
@@ -151,7 +151,7 @@
             },
             "Volo.Abp.Ddd.Domain": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             }
           },
           "imports": [
@@ -168,101 +168,20 @@
         }
       }
     },
-    "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.EntityFrameworkCore\\InstaRent.Payment.EntityFrameworkCore.csproj": {
+    "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\test\\InstaRent.Payment.EntityFrameworkCore.Tests\\InstaRent.Payment.EntityFrameworkCore.Tests.csproj": {
       "version": "0.1.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.EntityFrameworkCore\\InstaRent.Payment.EntityFrameworkCore.csproj",
-        "projectName": "InstaRent.Payment.EntityFrameworkCore",
-        "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.EntityFrameworkCore\\InstaRent.Payment.EntityFrameworkCore.csproj",
-        "packagesPath": "C:\\Users\\arkar\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.EntityFrameworkCore\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "D:\\Projects\\School\\InstaRent\\Payment\\NuGet.Config",
-          "C:\\Users\\arkar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.myget.org/F/blazorise/api/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {
-              "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj": {
-                "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "ConfigureAwait.Fody": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.3.1, )"
-            },
-            "Fody": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.5.3, )"
-            },
-            "Volo.Abp.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.3.3, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.EntityFrameworkCore.Tests\\InstaRent.Payment.EntityFrameworkCore.Tests.csproj": {
-      "version": "0.1.0",
-      "restore": {
-        "projectUniqueName": "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.EntityFrameworkCore.Tests\\InstaRent.Payment.EntityFrameworkCore.Tests.csproj",
+        "projectUniqueName": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\test\\InstaRent.Payment.EntityFrameworkCore.Tests\\InstaRent.Payment.EntityFrameworkCore.Tests.csproj",
         "projectName": "InstaRent.Payment.EntityFrameworkCore.Tests",
-        "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.EntityFrameworkCore.Tests\\InstaRent.Payment.EntityFrameworkCore.Tests.csproj",
+        "projectPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\test\\InstaRent.Payment.EntityFrameworkCore.Tests\\InstaRent.Payment.EntityFrameworkCore.Tests.csproj",
         "packagesPath": "C:\\Users\\arkar\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.EntityFrameworkCore.Tests\\obj\\",
+        "outputPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\test\\InstaRent.Payment.EntityFrameworkCore.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\Projects\\School\\InstaRent\\Payment\\NuGet.Config",
+          "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\NuGet.Config",
           "C:\\Users\\arkar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -279,11 +198,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.EntityFrameworkCore\\InstaRent.Payment.EntityFrameworkCore.csproj": {
-                "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.EntityFrameworkCore\\InstaRent.Payment.EntityFrameworkCore.csproj"
-              },
-              "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.TestBase\\InstaRent.Payment.TestBase.csproj": {
-                "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.TestBase\\InstaRent.Payment.TestBase.csproj"
+              "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\test\\InstaRent.Payment.TestBase\\InstaRent.Payment.TestBase.csproj": {
+                "projectPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\test\\InstaRent.Payment.TestBase\\InstaRent.Payment.TestBase.csproj"
               }
             }
           }
@@ -319,7 +235,7 @@
             },
             "Volo.Abp.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             }
           },
           "imports": [
@@ -341,20 +257,20 @@
         }
       }
     },
-    "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.TestBase\\InstaRent.Payment.TestBase.csproj": {
+    "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\test\\InstaRent.Payment.TestBase\\InstaRent.Payment.TestBase.csproj": {
       "version": "0.1.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.TestBase\\InstaRent.Payment.TestBase.csproj",
+        "projectUniqueName": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\test\\InstaRent.Payment.TestBase\\InstaRent.Payment.TestBase.csproj",
         "projectName": "InstaRent.Payment.TestBase",
-        "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.TestBase\\InstaRent.Payment.TestBase.csproj",
+        "projectPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\test\\InstaRent.Payment.TestBase\\InstaRent.Payment.TestBase.csproj",
         "packagesPath": "C:\\Users\\arkar\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\School\\InstaRent\\Payment\\test\\InstaRent.Payment.TestBase\\obj\\",
+        "outputPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\test\\InstaRent.Payment.TestBase\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\Projects\\School\\InstaRent\\Payment\\NuGet.Config",
+          "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\NuGet.Config",
           "C:\\Users\\arkar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -371,8 +287,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj": {
-                "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj"
+              "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj": {
+                "projectPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj"
               }
             }
           }
@@ -412,15 +328,15 @@
             },
             "Volo.Abp.Authorization": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.Autofac": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.TestBase": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "xunit": {
               "target": "Package",

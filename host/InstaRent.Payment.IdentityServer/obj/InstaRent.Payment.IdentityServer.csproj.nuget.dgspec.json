@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\School\\InstaRent\\Payment\\host\\InstaRent.Payment.IdentityServer\\InstaRent.Payment.IdentityServer.csproj": {}
+    "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\host\\InstaRent.Payment.IdentityServer\\InstaRent.Payment.IdentityServer.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\School\\InstaRent\\Payment\\host\\InstaRent.Payment.Host.Shared\\InstaRent.Payment.Host.Shared.csproj": {
+    "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\host\\InstaRent.Payment.Host.Shared\\InstaRent.Payment.Host.Shared.csproj": {
       "version": "0.1.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\School\\InstaRent\\Payment\\host\\InstaRent.Payment.Host.Shared\\InstaRent.Payment.Host.Shared.csproj",
+        "projectUniqueName": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\host\\InstaRent.Payment.Host.Shared\\InstaRent.Payment.Host.Shared.csproj",
         "projectName": "InstaRent.Payment.Host.Shared",
-        "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\host\\InstaRent.Payment.Host.Shared\\InstaRent.Payment.Host.Shared.csproj",
+        "projectPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\host\\InstaRent.Payment.Host.Shared\\InstaRent.Payment.Host.Shared.csproj",
         "packagesPath": "C:\\Users\\arkar\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\School\\InstaRent\\Payment\\host\\InstaRent.Payment.Host.Shared\\obj\\",
+        "outputPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\host\\InstaRent.Payment.Host.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\Projects\\School\\InstaRent\\Payment\\NuGet.Config",
+          "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\NuGet.Config",
           "C:\\Users\\arkar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -78,20 +78,20 @@
         }
       }
     },
-    "D:\\Projects\\School\\InstaRent\\Payment\\host\\InstaRent.Payment.IdentityServer\\InstaRent.Payment.IdentityServer.csproj": {
+    "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\host\\InstaRent.Payment.IdentityServer\\InstaRent.Payment.IdentityServer.csproj": {
       "version": "0.1.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\School\\InstaRent\\Payment\\host\\InstaRent.Payment.IdentityServer\\InstaRent.Payment.IdentityServer.csproj",
+        "projectUniqueName": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\host\\InstaRent.Payment.IdentityServer\\InstaRent.Payment.IdentityServer.csproj",
         "projectName": "InstaRent.Payment.IdentityServer",
-        "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\host\\InstaRent.Payment.IdentityServer\\InstaRent.Payment.IdentityServer.csproj",
+        "projectPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\host\\InstaRent.Payment.IdentityServer\\InstaRent.Payment.IdentityServer.csproj",
         "packagesPath": "C:\\Users\\arkar\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\School\\InstaRent\\Payment\\host\\InstaRent.Payment.IdentityServer\\obj\\",
+        "outputPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\host\\InstaRent.Payment.IdentityServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\Projects\\School\\InstaRent\\Payment\\NuGet.Config",
+          "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\NuGet.Config",
           "C:\\Users\\arkar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -108,11 +108,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\School\\InstaRent\\Payment\\host\\InstaRent.Payment.Host.Shared\\InstaRent.Payment.Host.Shared.csproj": {
-                "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\host\\InstaRent.Payment.Host.Shared\\InstaRent.Payment.Host.Shared.csproj"
+              "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\host\\InstaRent.Payment.Host.Shared\\InstaRent.Payment.Host.Shared.csproj": {
+                "projectPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\host\\InstaRent.Payment.Host.Shared\\InstaRent.Payment.Host.Shared.csproj"
               },
-              "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Application.Contracts\\InstaRent.Payment.Application.Contracts.csproj": {
-                "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Application.Contracts\\InstaRent.Payment.Application.Contracts.csproj"
+              "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Application.Contracts\\InstaRent.Payment.Application.Contracts.csproj": {
+                "projectPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Application.Contracts\\InstaRent.Payment.Application.Contracts.csproj"
               }
             }
           }
@@ -158,123 +158,123 @@
             },
             "Volo.Abp.Account.Application": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.Account.HttpApi": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.Account.Web.IdentityServer": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.AspNetCore.Mvc": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.AspNetCore.Serilog": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.AuditLogging.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.Autofac": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.Caching.StackExchangeRedis": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.FeatureManagement.Application": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.FeatureManagement.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.FeatureManagement.HttpApi": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.Identity.Application": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.Identity.HttpApi": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.IdentityServer.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.PermissionManagement.Application": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.PermissionManagement.Domain.Identity": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.PermissionManagement.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.PermissionManagement.HttpApi": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.SettingManagement.Application": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.SettingManagement.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.SettingManagement.HttpApi": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.Swashbuckle": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.TenantManagement.Application": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.TenantManagement.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.TenantManagement.HttpApi": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             }
           },
           "imports": [
@@ -299,20 +299,20 @@
         }
       }
     },
-    "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Application.Contracts\\InstaRent.Payment.Application.Contracts.csproj": {
+    "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Application.Contracts\\InstaRent.Payment.Application.Contracts.csproj": {
       "version": "0.1.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Application.Contracts\\InstaRent.Payment.Application.Contracts.csproj",
+        "projectUniqueName": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Application.Contracts\\InstaRent.Payment.Application.Contracts.csproj",
         "projectName": "InstaRent.Payment.Application.Contracts",
-        "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Application.Contracts\\InstaRent.Payment.Application.Contracts.csproj",
+        "projectPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Application.Contracts\\InstaRent.Payment.Application.Contracts.csproj",
         "packagesPath": "C:\\Users\\arkar\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Application.Contracts\\obj\\",
+        "outputPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Application.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\Projects\\School\\InstaRent\\Payment\\NuGet.Config",
+          "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\NuGet.Config",
           "C:\\Users\\arkar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -329,8 +329,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj": {
-                "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj"
+              "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj": {
+                "projectPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj"
               }
             }
           }
@@ -364,11 +364,11 @@
             },
             "Volo.Abp.Authorization": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.Ddd.Application.Contracts": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             }
           },
           "imports": [
@@ -385,20 +385,20 @@
         }
       }
     },
-    "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj": {
+    "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj": {
       "version": "0.1.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj",
+        "projectUniqueName": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj",
         "projectName": "InstaRent.Payment.Domain.Shared",
-        "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj",
+        "projectPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj",
         "packagesPath": "C:\\Users\\arkar\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\obj\\",
+        "outputPath": "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\Projects\\School\\InstaRent\\Payment\\NuGet.Config",
+          "D:\\Projects\\SchoolProject\\InstaRent\\Payment\\NuGet.Config",
           "C:\\Users\\arkar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -450,7 +450,7 @@
             },
             "Volo.Abp.Validation": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             }
           },
           "imports": [

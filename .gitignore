@@ -251,12 +251,12 @@ paket-files/
 .idea/
 *.sln.iml
 
-# Catalog
-host/InstaRent.Catalog.IdentityServer/Logs/logs.txt
-host/InstaRent.Catalog.HttpApi.Host/Logs/logs.txt
-host/InstaRent.Catalog.Web.Host/Logs/logs.txt
-host/InstaRent.Catalog.Web.Unified/Logs/logs.txt
-host/InstaRent.Catalog.Blazor.Server.Host/Logs/logs.txt
+# Payment
+host/InstaRent.Payment.IdentityServer/Logs/logs.txt
+host/InstaRent.Payment.HttpApi.Host/Logs/logs.txt
+host/InstaRent.Payment.Web.Host/Logs/logs.txt
+host/InstaRent.Payment.Web.Unified/Logs/logs.txt
+host/InstaRent.Payment.Blazor.Server.Host/Logs/logs.txt
 
 # Use abp install-libs to restore.
 **/wwwroot/libs/*

@@ -1,9 +1,9 @@
-﻿using Localization.Resources.AbpUi;
-using InstaRent.Payment.Localization;
+﻿using InstaRent.Payment.Localization;
+using Localization.Resources.AbpUi;
+using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace InstaRent.Payment;
 
@@ -29,4 +29,6 @@ public class PaymentHttpApiModule : AbpModule
                 .AddBaseTypes(typeof(AbpUiResource));
         });
     }
+
+
 }

@@ -7,7 +7,7 @@ namespace InstaRent.Payment.Transactions
 {
     public interface ITransactionAppService : IApplicationService
     {
-        Task<PagedResultDto<TransactionDto>> GetListAsync(GetTransactionInput input);
+        Task<PagedResultDto<TransactionDto>> GetListAsync(GetTransactionsInput input);
 
         Task<TransactionDto> GetAsync(Guid id);
 

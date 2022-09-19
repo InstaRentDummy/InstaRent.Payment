@@ -7,10 +7,10 @@ using Volo.Abp.AspNetCore.Mvc;
 
 namespace InstaRent.Payment.Transactions
 {
-    [RemoteService(Name = "Transaction")]
-    [Area("Payment")]
+    [RemoteService(Name = "Payment")]
+    [Area("payment")]
     [ControllerName("Transaction")]
-    [Route("api/Payment/Transactions")]
+    [Route("api/transaction")]
     public class TransactionController : AbpController, ITransactionAppService
     {
         private readonly ITransactionAppService _appService;
@@ -21,7 +21,7 @@ namespace InstaRent.Payment.Transactions
         }
 
         [HttpGet]
-        public virtual Task<PagedResultDto<TransactionDto>> GetListAsync(GetTransactionInput input)
+        public virtual Task<PagedResultDto<TransactionDto>> GetListAsync(GetTransactionsInput input)
         {
             return _appService.GetListAsync(input);
         }

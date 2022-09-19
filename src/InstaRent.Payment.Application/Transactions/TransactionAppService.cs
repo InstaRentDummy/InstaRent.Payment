@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InstaRent.Payment.CartItems;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Volo.Abp.Application.Dtos;
@@ -17,10 +18,10 @@ namespace InstaRent.Payment.Transactions
             _manager = manager;
         }
 
-        public virtual async Task<PagedResultDto<TransactionDto>> GetListAsync(GetTransactionInput input)
+        public virtual async Task<PagedResultDto<TransactionDto>> GetListAsync(GetTransactionsInput input)
         {
-            var totalCount = await _repository.GetCountAsync(input.FilterText, input.date_transactedMin, input.date_transactedMax, input.lessee_id, input.renter_id);
-            var items = await _repository.GetListAsync(input.FilterText, input.date_transactedMin, input.date_transactedMax, input.lessee_id, input.renter_id, input.Sorting, input.MaxResultCount, input.SkipCount);
+            var totalCount = await _repository.GetCountAsync(input.FilterText, input.renter_id, input.lessee_id, input.date_transactedMin, input.date_transactedMax, input.isdeleted);
+            var items = await _repository.GetListAsync(input.FilterText, input.renter_id, input.lessee_id, input.date_transactedMin, input.date_transactedMax, input.isdeleted, input.Sorting, input.MaxResultCount, input.SkipCount);
 
             return new PagedResultDto<TransactionDto>
             {
@@ -36,15 +37,14 @@ namespace InstaRent.Payment.Transactions
 
         public virtual async Task DeleteAsync(Guid id)
         {
-            await _repository.DeleteAsync(id);
+            await _manager.DeleteAsync(id);
         }
 
         public virtual async Task<TransactionDto> CreateAsync(TransactionCreateDto input)
         {
 
             var transaction = await _manager.CreateAsync(
-            input.cart_items, input.date_transacted, input.lessee_id, input.renter_id
-            );
+            input.Lessee_Id, input.Date_Transacted, ObjectMapper.Map<List<CartItemDto>, List<CartItem>>(input.Cart_Items));
 
             return ObjectMapper.Map<Transaction, TransactionDto>(transaction);
         }
@@ -53,8 +53,7 @@ namespace InstaRent.Payment.Transactions
         {
 
             var transaction = await _manager.UpdateAsync(
-            id,
-            input.cart_items, input.date_transacted, input.lessee_id, input.renter_id, input.ConcurrencyStamp
+            id, input.Lessee_Id, input.Date_Transacted, ObjectMapper.Map<List<CartItemDto>, List<CartItem>>(input.Cart_Items), input.ConcurrencyStamp
             );
 
             return ObjectMapper.Map<Transaction, TransactionDto>(transaction);

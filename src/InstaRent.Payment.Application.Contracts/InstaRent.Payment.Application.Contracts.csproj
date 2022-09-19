@@ -8,9 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="5.3.3" />
-    <PackageReference Include="Volo.Abp.Authorization" Version="5.3.3" />
+    <PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="5.3.4" />
+    <PackageReference Include="Volo.Abp.Authorization" Version="5.3.4" />
     <ProjectReference Include="..\InstaRent.Payment.Domain.Shared\InstaRent.Payment.Domain.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="InstaRent.Catalog.Application.Contracts">
+      <HintPath>InstaRent.Catalog.Application.Contracts.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

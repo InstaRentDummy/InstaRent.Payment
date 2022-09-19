@@ -1,30 +1,34 @@
+//using InstaRent.Payment.EntityFrameworkCore;
+using InstaRent.Payment.MongoDB;
 using InstaRent.Payment.MultiTenancy;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+//using IdentityModel;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.DataProtection;
+//using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using StackExchange.Redis;
+using Steeltoe.Discovery.Client;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Volo.Abp;
+using Volo.Abp.AspNetCore.Mvc.AntiForgery;
 using Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy;
+//using Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared;
 using Volo.Abp.AspNetCore.Serilog;
 //using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.Autofac;
-using Volo.Abp.Caching;
-using Volo.Abp.Caching.StackExchangeRedis;
 //using Volo.Abp.EntityFrameworkCore;
 //using Volo.Abp.EntityFrameworkCore.SqlServer;
+//using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
 using Volo.Abp.MultiTenancy;
 //using Volo.Abp.PermissionManagement.EntityFrameworkCore;
+//using Volo.Abp.Security.Claims;
 //using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.Swashbuckle;
+using Volo.Abp.Uow;
 //using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.Abp.VirtualFileSystem;
 
@@ -36,12 +40,13 @@ namespace InstaRent.Payment;
     typeof(PaymentHttpApiModule),
     typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
     typeof(AbpAutofacModule),
-    typeof(AbpCachingStackExchangeRedisModule),
+    //typeof(AbpCachingStackExchangeRedisModule),
     //typeof(AbpEntityFrameworkCoreSqlServerModule),
     //typeof(AbpAuditLoggingEntityFrameworkCoreModule),
     //typeof(AbpPermissionManagementEntityFrameworkCoreModule),
     //typeof(AbpSettingManagementEntityFrameworkCoreModule),
     //typeof(AbpTenantManagementEntityFrameworkCoreModule),
+    typeof(PaymentMongoDbModule),
     typeof(AbpAspNetCoreSerilogModule),
     typeof(AbpSwashbuckleModule)
     )]
@@ -74,19 +79,29 @@ public class PaymentHttpApiHostModule : AbpModule
             });
         }
 
-        context.Services.AddAbpSwaggerGenWithOAuth(
-            configuration["AuthServer:Authority"],
-            new Dictionary<string, string>
-            {
-                {"Payment", "Payment API"}
-            },
-            options =>
-            {
-                options.SwaggerDoc("v1", new OpenApiInfo { Title = "Payment API", Version = "v1" });
-                options.DocInclusionPredicate((docName, description) => true);
-                options.CustomSchemaIds(type => type.FullName);
-                options.HideAbpEndpoints();
-            });
+        context.Services.AddAbpSwaggerGen(
+                options =>
+                {
+                    options.SwaggerDoc("v1", new OpenApiInfo { Title = "Payment API", Version = "v1" });
+                    options.DocInclusionPredicate((docName, description) => true);
+                    options.CustomSchemaIds(type => type.FullName);
+                    options.HideAbpEndpoints();
+                }
+            );
+
+        //context.Services.AddAbpSwaggerGenWithOAuth(
+        //    configuration["AuthServer:Authority"],
+        //    new Dictionary<string, string>
+        //    {
+        //        {"Payment", "Payment API"}
+        //    },
+        //    options =>
+        //    {
+        //        options.SwaggerDoc("v1", new OpenApiInfo { Title = "Payment API", Version = "v1" });
+        //        options.DocInclusionPredicate((docName, description) => true);
+        //        options.CustomSchemaIds(type => type.FullName);
+        //        options.HideAbpEndpoints();
+        //    });
 
         //Configure<AbpLocalizationOptions>(options =>
         //{
@@ -111,25 +126,27 @@ public class PaymentHttpApiHostModule : AbpModule
         //    options.Languages.Add(new LanguageInfo("es", "es", "Español"));
         //});
 
-        context.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            .AddJwtBearer(options =>
-            {
-                options.Authority = configuration["AuthServer:Authority"];
-                options.RequireHttpsMetadata = Convert.ToBoolean(configuration["AuthServer:RequireHttpsMetadata"]);
-                options.Audience = "Payment";
-            });
+        //context.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        //    .AddJwtBearer(options =>
+        //    {
+        //        options.Authority = configuration["AuthServer:Authority"];
+        //        options.RequireHttpsMetadata = Convert.ToBoolean(configuration["AuthServer:RequireHttpsMetadata"]);
+        //        options.Audience = "Payment";
+        //    });
 
-        Configure<AbpDistributedCacheOptions>(options =>
-        {
-            options.KeyPrefix = "Payment:";
-        });
+        //Configure<AbpDistributedCacheOptions>(options =>
+        //{
+        //    options.KeyPrefix = "Payment:";
+        //});
 
-        var dataProtectionBuilder = context.Services.AddDataProtection().SetApplicationName("Payment");
-        if (!hostingEnvironment.IsDevelopment())
-        {
-            var redis = ConnectionMultiplexer.Connect(configuration["Redis:Configuration"]);
-            dataProtectionBuilder.PersistKeysToStackExchangeRedis(redis, "Payment-Protection-Keys");
-        }
+        //var dataProtectionBuilder = context.Services.AddDataProtection().SetApplicationName("Payment");
+        //if (!hostingEnvironment.IsDevelopment())
+        //{
+        //    var redis = ConnectionMultiplexer.Connect(configuration["Redis:Configuration"]);
+        //    dataProtectionBuilder.PersistKeysToStackExchangeRedis(redis, "Payment-Protection-Keys");
+        //}
+
+        context.Services.AddDiscoveryClient(configuration);
 
         context.Services.AddCors(options =>
         {
@@ -149,6 +166,13 @@ public class PaymentHttpApiHostModule : AbpModule
                     .AllowCredentials();
             });
         });
+
+        Configure<AbpUnitOfWorkDefaultOptions>(options =>
+        {
+            //Standalone MongoDB servers don't support transactions
+            options.TransactionBehavior = UnitOfWorkTransactionBehavior.Disabled;
+        });
+        Configure<AbpAntiForgeryOptions>(options => { options.AutoValidate = false; });
     }
 
     public override void OnApplicationInitialization(ApplicationInitializationContext context)
@@ -170,25 +194,32 @@ public class PaymentHttpApiHostModule : AbpModule
         app.UseStaticFiles();
         app.UseRouting();
         app.UseCors();
+        app.UseDiscoveryClient();
         app.UseAuthentication();
-        //if (MultiTenancyConsts.IsEnabled)
-        //{
-        //    app.UseMultiTenancy();
-        //}
+        if (MultiTenancyConsts.IsEnabled)
+        {
+            app.UseMultiTenancy();
+        }
         app.UseAbpRequestLocalization();
         app.UseAuthorization();
         app.UseSwagger();
+        //app.UseAbpSwaggerUI(options =>
+        //{
+        //    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Support APP API");
+
+        //    var configuration = context.GetConfiguration();
+        //    options.OAuthClientId(configuration["AuthServer:SwaggerClientId"]);
+        //    options.OAuthClientSecret(configuration["AuthServer:SwaggerClientSecret"]);
+        //    options.OAuthScopes("Payment");
+        //});
         app.UseAbpSwaggerUI(options =>
         {
-            options.SwaggerEndpoint("/swagger/v1/swagger.json", "Support APP API");
-
-            var configuration = context.GetConfiguration();
-            options.OAuthClientId(configuration["AuthServer:SwaggerClientId"]);
-            options.OAuthClientSecret(configuration["AuthServer:SwaggerClientSecret"]);
-            options.OAuthScopes("Payment");
+            options.SwaggerEndpoint("/swagger/v1/swagger.json", "Payment API");
         });
+
         app.UseAuditing();
         app.UseAbpSerilogEnrichers();
         app.UseConfiguredEndpoints();
     }
+
 }

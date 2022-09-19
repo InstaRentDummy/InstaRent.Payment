@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tQIvdOlOMuTymJLrTb7QTDg9ki9st7HWsEbsTyVyPtH0j0fPUTh6twanzqIjb78o8x8MaO2b9f4G64r3Y4RoIg==",
+  "dgSpecHash": "xX2M03z4LtKE4o5AYlAsvcI6hYpbU2phdHBki1NprQHheg0JzjdmfacgkQl492P7ywTsn4GbiVn6Dnhc2OSQwA==",
   "success": true,
   "projectFilePath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain.Shared\\InstaRent.Payment.Domain.Shared.csproj",
   "expectedPackageFiles": [
@@ -72,19 +72,19 @@
     "C:\\Users\\arkar\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\arkar\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\arkar\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.core\\5.3.3\\volo.abp.core.5.3.3.nupkg.sha512",
-    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.data\\5.3.3\\volo.abp.data.5.3.3.nupkg.sha512",
-    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.eventbus.abstractions\\5.3.3\\volo.abp.eventbus.abstractions.5.3.3.nupkg.sha512",
-    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.localization\\5.3.3\\volo.abp.localization.5.3.3.nupkg.sha512",
-    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.localization.abstractions\\5.3.3\\volo.abp.localization.abstractions.5.3.3.nupkg.sha512",
-    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.multitenancy\\5.3.3\\volo.abp.multitenancy.5.3.3.nupkg.sha512",
-    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.objectextending\\5.3.3\\volo.abp.objectextending.5.3.3.nupkg.sha512",
-    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.security\\5.3.3\\volo.abp.security.5.3.3.nupkg.sha512",
-    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.settings\\5.3.3\\volo.abp.settings.5.3.3.nupkg.sha512",
-    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.uow\\5.3.3\\volo.abp.uow.5.3.3.nupkg.sha512",
-    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.validation\\5.3.3\\volo.abp.validation.5.3.3.nupkg.sha512",
-    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.validation.abstractions\\5.3.3\\volo.abp.validation.abstractions.5.3.3.nupkg.sha512",
-    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.virtualfilesystem\\5.3.3\\volo.abp.virtualfilesystem.5.3.3.nupkg.sha512"
+    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.core\\5.3.4\\volo.abp.core.5.3.4.nupkg.sha512",
+    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.data\\5.3.4\\volo.abp.data.5.3.4.nupkg.sha512",
+    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.eventbus.abstractions\\5.3.4\\volo.abp.eventbus.abstractions.5.3.4.nupkg.sha512",
+    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.localization\\5.3.4\\volo.abp.localization.5.3.4.nupkg.sha512",
+    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.localization.abstractions\\5.3.4\\volo.abp.localization.abstractions.5.3.4.nupkg.sha512",
+    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.multitenancy\\5.3.4\\volo.abp.multitenancy.5.3.4.nupkg.sha512",
+    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.objectextending\\5.3.4\\volo.abp.objectextending.5.3.4.nupkg.sha512",
+    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.security\\5.3.4\\volo.abp.security.5.3.4.nupkg.sha512",
+    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.settings\\5.3.4\\volo.abp.settings.5.3.4.nupkg.sha512",
+    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.uow\\5.3.4\\volo.abp.uow.5.3.4.nupkg.sha512",
+    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.validation\\5.3.4\\volo.abp.validation.5.3.4.nupkg.sha512",
+    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.validation.abstractions\\5.3.4\\volo.abp.validation.abstractions.5.3.4.nupkg.sha512",
+    "C:\\Users\\arkar\\.nuget\\packages\\volo.abp.virtualfilesystem\\5.3.4\\volo.abp.virtualfilesystem.5.3.4.nupkg.sha512"
   ],
   "logs": []
 }

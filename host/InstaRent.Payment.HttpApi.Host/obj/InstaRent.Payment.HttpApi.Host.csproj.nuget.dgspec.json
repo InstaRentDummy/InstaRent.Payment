@@ -116,6 +116,9 @@
               },
               "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.HttpApi\\InstaRent.Payment.HttpApi.csproj": {
                 "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.HttpApi\\InstaRent.Payment.HttpApi.csproj"
+              },
+              "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.MongoDB\\InstaRent.Payment.MongoDB.csproj": {
+                "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.MongoDB\\InstaRent.Payment.MongoDB.csproj"
               }
             }
           }
@@ -165,45 +168,53 @@
               "target": "Package",
               "version": "[1.5.0, )"
             },
+            "Steeltoe.Discovery.ClientCore": {
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "Steeltoe.Discovery.Eureka": {
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
             "Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.AspNetCore.Serilog": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.AuditLogging.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.Autofac": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.Caching.StackExchangeRedis": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.PermissionManagement.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.SettingManagement.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.Swashbuckle": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.TenantManagement.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             }
           },
           "imports": [
@@ -293,11 +304,11 @@
             },
             "Volo.Abp.Authorization": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.Ddd.Application.Contracts": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             }
           },
           "imports": [
@@ -374,13 +385,27 @@
               "target": "Package",
               "version": "[6.5.3, )"
             },
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.21.5, )"
+            },
+            "Grpc.Net.ClientFactory": {
+              "target": "Package",
+              "version": "[2.48.0, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.48.1, )"
+            },
             "Volo.Abp.AutoMapper": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Volo.Abp.Ddd.Application": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             }
           },
           "imports": [
@@ -467,7 +492,7 @@
             },
             "Volo.Abp.Validation": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             }
           },
           "imports": [
@@ -549,7 +574,7 @@
             },
             "Volo.Abp.Ddd.Domain": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             }
           },
           "imports": [
@@ -625,7 +650,7 @@
             },
             "Volo.Abp.AspNetCore.Mvc": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             }
           },
           "imports": [
@@ -643,6 +668,88 @@
               "privateAssets": "all"
             }
           },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.MongoDB\\InstaRent.Payment.MongoDB.csproj": {
+      "version": "0.1.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.MongoDB\\InstaRent.Payment.MongoDB.csproj",
+        "projectName": "InstaRent.Payment.MongoDB",
+        "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.MongoDB\\InstaRent.Payment.MongoDB.csproj",
+        "packagesPath": "C:\\Users\\arkar\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.MongoDB\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Projects\\School\\InstaRent\\Payment\\NuGet.Config",
+          "C:\\Users\\arkar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/blazorise/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj": {
+                "projectPath": "D:\\Projects\\School\\InstaRent\\Payment\\src\\InstaRent.Payment.Domain\\InstaRent.Payment.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "ConfigureAwait.Fody": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.5.3, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Volo.Abp.MongoDB": {
+              "target": "Package",
+              "version": "[5.3.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }

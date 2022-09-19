@@ -10,9 +10,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="6.0.5" />
-    <ProjectReference Include="..\..\src\InstaRent.Payment.EntityFrameworkCore\InstaRent.Payment.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\InstaRent.Payment.TestBase\InstaRent.Payment.TestBase.csproj" />
-    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" Version="5.3.3" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" Version="5.3.4" />
   </ItemGroup>
 
 </Project>
