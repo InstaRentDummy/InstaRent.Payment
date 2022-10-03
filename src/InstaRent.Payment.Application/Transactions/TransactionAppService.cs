@@ -20,8 +20,8 @@ namespace InstaRent.Payment.Transactions
 
         public virtual async Task<PagedResultDto<TransactionDto>> GetListAsync(GetTransactionsInput input)
         {
-            var totalCount = await _repository.GetCountAsync(input.FilterText, input.bag_id, input.renter_id, input.lessee_id, input.date_transactedMin, input.date_transactedMax, null, input.isdeleted);
-            var items = await _repository.GetListAsync(input.FilterText, input.bag_id, input.renter_id, input.lessee_id, input.date_transactedMin, input.date_transactedMax, null, input.isdeleted, input.Sorting, input.MaxResultCount, input.SkipCount);
+            var totalCount = await _repository.GetCountAsync(input.FilterText, string.IsNullOrEmpty(input.bag_id) ? null : new Guid(input.bag_id), input.renter_id, input.lessee_id, input.date_transactedMin, input.date_transactedMax, null, input.isdeleted);
+            var items = await _repository.GetListAsync(input.FilterText, string.IsNullOrEmpty(input.bag_id) ? null : new Guid(input.bag_id), input.renter_id, input.lessee_id, input.date_transactedMin, input.date_transactedMax, null, input.isdeleted, input.Sorting, input.MaxResultCount, input.SkipCount);
 
             return new PagedResultDto<TransactionDto>
             {
@@ -39,9 +39,9 @@ namespace InstaRent.Payment.Transactions
         {
             for (var day = startDate.Date; day.Date <= EndDate.Date; day = day.AddDays(1))
             {
-                var items = await _repository.GetListAsync(string.Empty, bagId, string.Empty, string.Empty, null, null, day, false, string.Empty, 1, 0);
+                var items = await _repository.GetListAsync(string.Empty, string.IsNullOrEmpty(bagId) ? null : new Guid(bagId), string.Empty, string.Empty, null, null, day, false, string.Empty, 1, 0);
 
-                if (items != null)
+                if (items != null && items.Count > 0)
                     return true;
             }
 

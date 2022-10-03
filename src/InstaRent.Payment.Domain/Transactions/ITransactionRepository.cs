@@ -10,7 +10,7 @@ namespace InstaRent.Payment.Transactions
     {
         Task<List<Transaction>> GetListAsync(
             string filterText = null,
-            string bag_id = null,
+            Guid? bag_id = null,
             string renter_id = null,
             string lessee_id = null,
             DateTime? date_transactedMin = null,
@@ -25,7 +25,7 @@ namespace InstaRent.Payment.Transactions
 
         Task<long> GetCountAsync(
             string filterText = null,
-            string bag_id = null,
+            Guid? bag_id = null,
             string renter_id = null,
             string lessee_id = null,
             DateTime? date_transactedMin = null,

@@ -16,6 +16,28 @@ namespace InstaRent.Payment.UserPreferences
             _userPreferenceRepository = userPreferenceRepository;
         }
 
+        public async Task<UserPreference> CreateAsync(
+        string userId, List<string> tags, double? avgRating, double? totalNumOfRating)
+        {
+            List<Tag> _tags = new List<Tag>();
+
+            if (tags != null)
+                foreach (var tag in tags)
+                {
+                    _tags.Add(new Tag()
+                    {
+                        tagname = tag,
+                        weightage = 1
+                    });
+                }
+
+            var userPreference = new UserPreference(
+                GuidGenerator.Create(), userId, _tags, avgRating, totalNumOfRating
+             );
+
+            return await _userPreferenceRepository.InsertAsync(userPreference);
+        }
+
         public async Task<UserPreference> UpdateTagsAsync(
             string userId, List<string> tags, [CanBeNull] string concurrencyStamp = null
         )
@@ -27,7 +49,12 @@ namespace InstaRent.Payment.UserPreferences
 
             foreach (var tag in tags)
             {
-                if (userPreference.Tags.Where(x => x.tagname == tag).Any())
+                if (userPreference.Tags == null)
+                {
+                    userPreference.Tags = new();
+                    userPreference.Tags.Add(new Tag() { tagname = tag, weightage = 1 });
+                }
+                else if (userPreference.Tags.Where(x => x.tagname == tag).Any())
                 {
                     var _tag = userPreference.Tags.Where(x => x.tagname == tag).First();
                     _tag.weightage++;
