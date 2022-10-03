@@ -7,5 +7,6 @@ namespace InstaRent.Payment
     public interface IPaymentOrderAppService : IApplicationService
     {
         Task<TransactionDto> PaymentAsync(TransactionCreateDto input);
+
     }
 }

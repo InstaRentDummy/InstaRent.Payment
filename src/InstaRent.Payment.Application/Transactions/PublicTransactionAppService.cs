@@ -17,8 +17,8 @@ namespace InstaRent.Payment.Transactions
 
         public virtual async Task<ListResultDto<TransactionDto>> GetListAsync(GetTransactionsInput input)
         {
-            var totalCount = await _repository.GetCountAsync(input.FilterText, input.renter_id, input.lessee_id, input.date_transactedMin, input.date_transactedMax, input.isdeleted);
-            var items = await _repository.GetListAsync(input.FilterText, input.renter_id, input.lessee_id, input.date_transactedMin, input.date_transactedMax, input.isdeleted, input.Sorting, input.MaxResultCount, input.SkipCount);
+            var totalCount = await _repository.GetCountAsync(input.FilterText, input.bag_id, input.renter_id, input.lessee_id, input.date_transactedMin, input.date_transactedMax, null, input.isdeleted);
+            var items = await _repository.GetListAsync(input.FilterText, input.bag_id, input.renter_id, input.lessee_id, input.date_transactedMin, input.date_transactedMax, null, input.isdeleted, input.Sorting, input.MaxResultCount, input.SkipCount);
 
             return new PagedResultDto<TransactionDto>
             {

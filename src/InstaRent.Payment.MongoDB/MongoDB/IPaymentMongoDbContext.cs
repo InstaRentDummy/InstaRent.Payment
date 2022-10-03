@@ -1,4 +1,5 @@
 ﻿using InstaRent.Payment.Transactions;
+using InstaRent.Payment.UserPreferences;
 using MongoDB.Driver;
 using Volo.Abp.Data;
 using Volo.Abp.MongoDB;
@@ -12,4 +13,5 @@ public interface IPaymentMongoDbContext : IAbpMongoDbContext
      * IMongoCollection<Question> Questions { get; }
      */
     IMongoCollection<Transaction> Transactions { get; }
+    IMongoCollection<UserPreference> UserPreferences { get; }
 }

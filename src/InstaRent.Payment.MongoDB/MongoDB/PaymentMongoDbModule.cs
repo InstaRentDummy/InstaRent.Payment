@@ -1,4 +1,5 @@
 ﻿using InstaRent.Payment.Transactions;
+using InstaRent.Payment.UserPreferences;
 using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.Modularity;
 using Volo.Abp.MongoDB;
@@ -19,6 +20,7 @@ public class PaymentMongoDbModule : AbpModule
              * options.AddRepository<Question, MongoQuestionRepository>();
              */
             options.AddRepository<Transaction, Transactions.MongoTransactionRepository>();
+            options.AddRepository<UserPreference, UserPreferences.MongoUserPreferenceRepository>();
         });
     }
 }

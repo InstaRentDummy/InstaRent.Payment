@@ -9,7 +9,7 @@ namespace InstaRent.Payment
     [RemoteService(Name = "Payment")]
     [Area("payment")]
     [ControllerName("PaymentOrder")]
-    [Route("api/payment")]
+    [Route("api/payment/order")]
     public class PaymentOrderController : AbpController, IPaymentOrderAppService
     {
         private readonly IPaymentOrderAppService _appService;

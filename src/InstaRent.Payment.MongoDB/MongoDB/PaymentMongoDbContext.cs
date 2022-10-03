@@ -1,4 +1,5 @@
 ﻿using InstaRent.Payment.Transactions;
+using InstaRent.Payment.UserPreferences;
 using MongoDB.Driver;
 using Volo.Abp.Data;
 using Volo.Abp.MongoDB;
@@ -12,6 +13,7 @@ public class PaymentMongoDbContext : AbpMongoDbContext, IPaymentMongoDbContext
      * public IMongoCollection<Question> Questions => Collection<Question>();
      */
     public IMongoCollection<Transaction> Transactions => Collection<Transaction>();
+    public IMongoCollection<UserPreference> UserPreferences => Collection<UserPreference>();
 
     protected override void CreateModel(IMongoModelBuilder modelBuilder)
     {

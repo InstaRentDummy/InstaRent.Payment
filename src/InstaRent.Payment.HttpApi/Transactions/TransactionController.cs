@@ -10,7 +10,7 @@ namespace InstaRent.Payment.Transactions
     [RemoteService(Name = "Payment")]
     [Area("payment")]
     [ControllerName("Transaction")]
-    [Route("api/transaction")]
+    [Route("api/payment/transaction")]
     public class TransactionController : AbpController, ITransactionAppService
     {
         private readonly ITransactionAppService _appService;
@@ -32,6 +32,14 @@ namespace InstaRent.Payment.Transactions
         {
             return _appService.GetAsync(id);
         }
+
+        [HttpGet]
+        [Route("CheckTransaction")]
+        public virtual Task<bool> CheckTransactionAsync(string bagId, DateTime startDate, DateTime EndDate)
+        {
+            return _appService.CheckTransactionAsync(bagId, startDate, EndDate);
+        }
+
 
         [HttpPost]
         public virtual Task<TransactionDto> CreateAsync(TransactionCreateDto input)

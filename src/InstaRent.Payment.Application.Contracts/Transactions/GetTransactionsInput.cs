@@ -6,6 +6,7 @@ namespace InstaRent.Payment.Transactions
     public class GetTransactionsInput : PagedAndSortedResultRequestDto
     {
         public string FilterText { get; set; }
+        public string bag_id { get; set; }
         public string renter_id { get; set; }
         public string lessee_id { get; set; }
         public DateTime? date_transactedMin { get; set; }

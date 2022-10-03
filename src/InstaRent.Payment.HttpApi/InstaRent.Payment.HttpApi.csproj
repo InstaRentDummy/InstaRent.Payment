@@ -8,8 +8,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Samples\**" />
+    <EmbeddedResource Remove="Samples\**" />
+    <None Remove="Samples\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="5.3.4" />
     <ProjectReference Include="..\InstaRent.Payment.Application.Contracts\InstaRent.Payment.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="..\InstaRent.Catalog.Application.Contracts">
+      <HintPath>InstaRent.Catalog.Application.Contracts.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

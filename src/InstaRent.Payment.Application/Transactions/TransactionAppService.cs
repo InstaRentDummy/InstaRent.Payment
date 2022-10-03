@@ -20,8 +20,8 @@ namespace InstaRent.Payment.Transactions
 
         public virtual async Task<PagedResultDto<TransactionDto>> GetListAsync(GetTransactionsInput input)
         {
-            var totalCount = await _repository.GetCountAsync(input.FilterText, input.renter_id, input.lessee_id, input.date_transactedMin, input.date_transactedMax, input.isdeleted);
-            var items = await _repository.GetListAsync(input.FilterText, input.renter_id, input.lessee_id, input.date_transactedMin, input.date_transactedMax, input.isdeleted, input.Sorting, input.MaxResultCount, input.SkipCount);
+            var totalCount = await _repository.GetCountAsync(input.FilterText, input.bag_id, input.renter_id, input.lessee_id, input.date_transactedMin, input.date_transactedMax, null, input.isdeleted);
+            var items = await _repository.GetListAsync(input.FilterText, input.bag_id, input.renter_id, input.lessee_id, input.date_transactedMin, input.date_transactedMax, null, input.isdeleted, input.Sorting, input.MaxResultCount, input.SkipCount);
 
             return new PagedResultDto<TransactionDto>
             {
@@ -33,6 +33,19 @@ namespace InstaRent.Payment.Transactions
         public virtual async Task<TransactionDto> GetAsync(Guid id)
         {
             return ObjectMapper.Map<Transaction, TransactionDto>(await _repository.GetAsync(id));
+        }
+
+        public virtual async Task<bool> CheckTransactionAsync(string bagId, DateTime startDate, DateTime EndDate)
+        {
+            for (var day = startDate.Date; day.Date <= EndDate.Date; day = day.AddDays(1))
+            {
+                var items = await _repository.GetListAsync(string.Empty, bagId, string.Empty, string.Empty, null, null, day, false, string.Empty, 1, 0);
+
+                if (items != null)
+                    return true;
+            }
+
+            return false;
         }
 
         public virtual async Task DeleteAsync(Guid id)

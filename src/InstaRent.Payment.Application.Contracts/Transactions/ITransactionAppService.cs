@@ -11,6 +11,8 @@ namespace InstaRent.Payment.Transactions
 
         Task<TransactionDto> GetAsync(Guid id);
 
+        Task<bool> CheckTransactionAsync(string bagId, DateTime startDate, DateTime EndDate);
+
         Task DeleteAsync(Guid id);
 
         Task<TransactionDto> CreateAsync(TransactionCreateDto input);

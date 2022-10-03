@@ -10,10 +10,12 @@ namespace InstaRent.Payment.Transactions
     {
         Task<List<Transaction>> GetListAsync(
             string filterText = null,
+            string bag_id = null,
             string renter_id = null,
             string lessee_id = null,
             DateTime? date_transactedMin = null,
             DateTime? date_transactedMax = null,
+            DateTime? bag_rented_date = null,
             bool? isdeleted = null,
             string sorting = null,
             int maxResultCount = int.MaxValue,
@@ -23,10 +25,12 @@ namespace InstaRent.Payment.Transactions
 
         Task<long> GetCountAsync(
             string filterText = null,
+            string bag_id = null,
             string renter_id = null,
             string lessee_id = null,
             DateTime? date_transactedMin = null,
             DateTime? date_transactedMax = null,
+            DateTime? bag_rented_date = null,
             bool? isdeleted = null,
             CancellationToken cancellationToken = default);
     }
