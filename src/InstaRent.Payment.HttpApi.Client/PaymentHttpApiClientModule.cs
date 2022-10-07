@@ -1,5 +1,4 @@
-﻿using InstaRent.Catalog.Grpc;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
@@ -26,19 +25,9 @@ public class PaymentHttpApiClientModule : AbpModule
             options.FileSets.AddEmbedded<PaymentHttpApiClientModule>();
         });
 
-        ConfigureGrpc(context);
+        
     }
 
-    private void ConfigureGrpc(ServiceConfigurationContext context)
-    {
-        context.Services.AddGrpcClient<BagPublic.BagPublicClient>((services, options) =>
-        {
-            var remoteServiceOptions = services.GetRequiredService<IOptionsMonitor<AbpRemoteServiceOptions>>().CurrentValue;
-            var catalogServiceConfiguration = remoteServiceOptions.RemoteServices.GetConfigurationOrDefault("Catalog");
-            var catalogGrpcUrl = catalogServiceConfiguration.GetOrDefault("GrpcUrl");
-
-            options.Address = new Uri(catalogGrpcUrl);
-        });
-    }
+    
 
 }

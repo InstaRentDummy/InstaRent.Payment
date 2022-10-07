@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Steeltoe.Discovery.Client;
 using System;
 using System.IO;
 using System.Linq;
@@ -39,10 +38,7 @@ public class PaymentHttpApiHostModule : AbpModule
         var hostingEnvironment = context.Services.GetHostingEnvironment();
         var configuration = context.Services.GetConfiguration();
 
-        //Configure<AbpDbContextOptions>(options =>
-        //{
-        //    options.UseSqlServer();
-        //});
+       
 
         Configure<AbpMultiTenancyOptions>(options =>
         {
@@ -70,7 +66,6 @@ public class PaymentHttpApiHostModule : AbpModule
                 }
             );
 
-        context.Services.AddDiscoveryClient(configuration);
 
         context.Services.AddCors(options =>
         {
@@ -118,23 +113,13 @@ public class PaymentHttpApiHostModule : AbpModule
         app.UseStaticFiles();
         app.UseRouting();
         app.UseCors();
-        app.UseAuthentication();
         if (MultiTenancyConsts.IsEnabled)
         {
             app.UseMultiTenancy();
         }
         app.UseAbpRequestLocalization();
-        app.UseAuthorization();
         app.UseSwagger();
-        //app.UseAbpSwaggerUI(options =>
-        //{
-        //    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Support APP API");
-
-        //    var configuration = context.GetConfiguration();
-        //    options.OAuthClientId(configuration["AuthServer:SwaggerClientId"]);
-        //    options.OAuthClientSecret(configuration["AuthServer:SwaggerClientSecret"]);
-        //    options.OAuthScopes("Payment");
-        //});
+      
         app.UseAbpSwaggerUI(options =>
         {
             options.SwaggerEndpoint("/swagger/v1/swagger.json", "Payment API");

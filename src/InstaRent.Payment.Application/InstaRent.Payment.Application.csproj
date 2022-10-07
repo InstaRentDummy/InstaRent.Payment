@@ -8,12 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Google.Protobuf" Version="3.21.5" />
-    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.48.0" />
-    <PackageReference Include="Grpc.Tools" Version="2.48.1">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
+    <Compile Remove="Transactions\TransactionBagService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="bag.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Volo.Abp.AutoMapper" Version="5.3.4" />
     <PackageReference Include="Volo.Abp.Ddd.Application" Version="5.3.4" />
     <ProjectReference Include="..\InstaRent.Payment.Application.Contracts\InstaRent.Payment.Application.Contracts.csproj" />
@@ -24,10 +26,6 @@
     <Reference Include="InstaRent.Catalog.Application.Contracts">
       <HintPath>..\InstaRent.Payment.Application.Contracts\InstaRent.Catalog.Application.Contracts.dll</HintPath>
     </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Protobuf Include="bag.proto" GrpcServices="Client" />
   </ItemGroup>
   
 </Project>
