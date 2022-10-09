@@ -8,12 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Google.Protobuf" Version="3.21.5" />
-    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.48.0" />
-    <PackageReference Include="Grpc.Tools" Version="2.48.1">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
     <PackageReference Include="Volo.Abp.Http.Client" Version="5.3.4" />
     <ProjectReference Include="..\InstaRent.Payment.Application.Contracts\InstaRent.Payment.Application.Contracts.csproj" />
   </ItemGroup>
@@ -21,10 +15,6 @@
   <ItemGroup>
     <EmbeddedResource Include="**\*generate-proxy.json" />
     <Content Remove="**\*generate-proxy.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Protobuf Include="bag.proto" GrpcServices="Client" />
   </ItemGroup>
   
 </Project>

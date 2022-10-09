@@ -1,4 +1,4 @@
-﻿using InstaRent.Payment.EntityFrameworkCore;
+﻿using InstaRent.Payment.MongoDB;
 using Volo.Abp.Modularity;
 
 namespace InstaRent.Payment;
@@ -8,7 +8,7 @@ namespace InstaRent.Payment;
  * database independent anyway.
  */
 [DependsOn(
-    typeof(PaymentEntityFrameworkCoreTestModule)
+    typeof(PaymentMongoDbTestModule)
     )]
 public class PaymentDomainTestModule : AbpModule
 {
