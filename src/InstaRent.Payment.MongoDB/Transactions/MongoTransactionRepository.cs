@@ -69,11 +69,11 @@ namespace InstaRent.Payment.Transactions
             return query
                 .WhereIf(!string.IsNullOrWhiteSpace(filterText), e => e.Lessee_Id.Contains(filterText) || e.Cart_Items.Any(i => i.BagName.Contains(filterText)) || e.Cart_Items.Any(t => t.RenterId.Contains(filterText)))
                     .WhereIf(!string.IsNullOrWhiteSpace(lessee_id), e => e.Lessee_Id == lessee_id)
-                    .WhereIf(bag_id != null && bag_id != Guid.Empty, e => e.Cart_Items.Any(x => x.BagId == bag_id))
                     .WhereIf(!string.IsNullOrWhiteSpace(renter_id), e => e.Cart_Items.Any(x => x.RenterId == renter_id))
+                    .WhereIf(bag_id != null && bag_id != Guid.Empty, e => e.Cart_Items.Any(x => x.BagId == bag_id))
                     .WhereIf(date_transactedMin.HasValue, e => e.Date_Transacted >= date_transactedMin.Value)
                     .WhereIf(date_transactedMax.HasValue, e => e.Date_Transacted <= date_transactedMax.Value)
-                    .WhereIf(bag_rented_date.HasValue, e => e.Cart_Items.Any(x => x.StartDate <= bag_rented_date.Value && x.EndDate >= bag_rented_date.Value))
+                    .WhereIf(bag_rented_date.HasValue, e => e.Cart_Items.Any(x => x.BagId == bag_id && x.StartDate <= bag_rented_date.Value && x.EndDate >= bag_rented_date.Value))
                     .WhereIf(isdeleted.HasValue, e => e.Isdeleted.Equals(isdeleted.Value));
         }
     }
