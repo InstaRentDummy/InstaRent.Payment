@@ -14,22 +14,22 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: instarent-catalog-deployment
+  name: instarent-payment-deployment
   labels:
-    app: instarent-catalog
+    app: instarent-payment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: instarent-catalog
+      app: instarent-payment
   template:
     metadata:
       labels:
-        app: instarent-catalog
+        app: instarent-payment
     spec:
       containers:
-      - name: catalogservice
-        image: instarent.azurecr.io/instarentcataloghttpapihost:latest
+      - name: paymentservice
+        image: instarent.azurecr.io/instarent-payment:latest
         ports:
         - containerPort: 80
         - containerPort: 443
@@ -41,7 +41,7 @@ spec:
         - name: ASPNETCORE_Kestrel__Certificates__Default__Path
           value: "/dev-cert/localhost.pfx"
         - name: App__SelfUrl
-          value: "https://catalog.instarentshop.com"
+          value: "https://payment.instarentshop.com"
         - name: App__CorsOrigins
           value: "https://webgateway-service,http://webgateway-service,https://webgateway.instarentshop.com,http://webgateway.instarentshop.com"
         - name: ConnectionStrings__InstaRent 
@@ -57,8 +57,8 @@ spec:
         - mountPath: /dev-cert
           name: dev-cert
         - mountPath: /app/Logs
-          name: cataloglogsdata 
-          subPathExpr: catalog/$(POD_NAME) 
+          name: paymentlogsdata 
+          subPathExpr: payment/$(POD_NAME) 
           
       imagePullSecrets:
       - name: regcred          
@@ -66,6 +66,6 @@ spec:
       - name: dev-cert
         secret:
           secretName: instranet-cert     
-      - name: cataloglogsdata
+      - name: paymentlogsdata
         persistentVolumeClaim:
           claimName: logsdata        
