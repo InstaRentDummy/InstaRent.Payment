@@ -1,0 +1,71 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: logsdata
+  annotations:
+    volume.beta.kubernetes.io/storage-class: azure-disk
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 3Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: instarent-catalog-deployment
+  labels:
+    app: instarent-catalog
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: instarent-catalog
+  template:
+    metadata:
+      labels:
+        app: instarent-catalog
+    spec:
+      containers:
+      - name: catalogservice
+        image: instarent.azurecr.io/instarentcataloghttpapihost:latest
+        ports:
+        - containerPort: 80
+        - containerPort: 443
+        env:
+        - name: ASPNETCORE_URLS
+          value: "https://+;http://+"
+        - name: ASPNETCORE_Kestrel__Certificates__Default__Password
+          value: "8b6039b6-c67a-448b-977b-0ce6d3fcfd49"
+        - name: ASPNETCORE_Kestrel__Certificates__Default__Path
+          value: "/dev-cert/localhost.pfx"
+        - name: App__SelfUrl
+          value: "https://catalog.instarentshop.com"
+        - name: App__CorsOrigins
+          value: "https://webgateway-service,http://webgateway-service,https://webgateway.instarentshop.com,http://webgateway.instarentshop.com"
+        - name: ConnectionStrings__InstaRent 
+          value: "mongodb://instarent-cosmodb:LuwgkT49A6BRqeY8Agnod7sHt8wLe9jmioeAeVfZQ6l9FSvpBB072EfzYEs3RU9oi6igUoPIYFw4PXF8Lqy9Tg==@instarent-cosmodb.mongo.cosmos.azure.com:10255/InstaRent?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@instarent-cosmodb@"
+   
+       
+        - name: POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+          
+        volumeMounts:
+        - mountPath: /dev-cert
+          name: dev-cert
+        - mountPath: /app/Logs
+          name: cataloglogsdata 
+          subPathExpr: catalog/$(POD_NAME) 
+          
+      imagePullSecrets:
+      - name: regcred          
+      volumes:
+      - name: dev-cert
+        secret:
+          secretName: instranet-cert     
+      - name: cataloglogsdata
+        persistentVolumeClaim:
+          claimName: logsdata        
