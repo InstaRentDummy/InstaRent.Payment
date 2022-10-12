@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: paymentservice
-        image: instarent.azurecr.io/instarent-payment:latest
+        image: instarent.azurecr.io/instarentpayment:latest
         ports:
         - containerPort: 80
         - containerPort: 443
