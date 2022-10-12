@@ -55,12 +55,12 @@ namespace InstaRent.Payment
                 _tags.AddRange(x.Tags);
             });
 
-            var result = await _userPreferenceRepository.GetCountAsync(null, input.Lessee_Id, null, null, null, null, null);
+            var result = await _userPreferenceRepository.GetCountAsync(null, input.Lessee_Id, null);
 
             if (result > 0)
                 await _userPreferenceManager.UpdateTagsAsync(input.Lessee_Id, _tags);
             else
-                await _userPreferenceManager.CreateAsync(input.Lessee_Id, _tags, 0, 0);
+                await _userPreferenceManager.CreateAsync(input.Lessee_Id, _tags);
 
             return ObjectMapper.Map<Transaction, TransactionDto>(transaction);
         }
