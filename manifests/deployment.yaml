@@ -18,7 +18,7 @@ metadata:
   labels:
     app: instarent-payment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: instarent-payment
