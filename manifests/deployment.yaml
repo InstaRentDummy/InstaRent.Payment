@@ -42,7 +42,10 @@ spec:
         - name: ASPNETCORE_URLS
           value: "https://+;http://+"
         - name: ASPNETCORE_Kestrel__Certificates__Default__Password
-          value: "8b6039b6-c67a-448b-977b-0ce6d3fcfd49"
+          valueFrom: 
+            secretKeyRef:
+              name: instranet-app-secret
+              key: ASPNETCORE_Kestrel__Certificates__Default__Password
         - name: ASPNETCORE_Kestrel__Certificates__Default__Path
           value: "/dev-cert/localhost.pfx"
         - name: App__SelfUrl
@@ -50,8 +53,10 @@ spec:
         - name: App__CorsOrigins
           value: "https://webgateway-service,http://webgateway-service,https://webgateway.instarentshop.com,http://webgateway.instarentshop.com"
         - name: ConnectionStrings__InstaRent 
-          value: "mongodb://instarent-cosmodb:LuwgkT49A6BRqeY8Agnod7sHt8wLe9jmioeAeVfZQ6l9FSvpBB072EfzYEs3RU9oi6igUoPIYFw4PXF8Lqy9Tg==@instarent-cosmodb.mongo.cosmos.azure.com:10255/InstaRent?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@instarent-cosmodb@"
-   
+          valueFrom: 
+            secretKeyRef:
+              name: instranet-app-secret
+              key: ConnectionStrings__InstaRent_Mongo
        
         - name: POD_NAME
           valueFrom:
