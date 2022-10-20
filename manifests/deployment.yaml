@@ -49,9 +49,9 @@ spec:
         - name: ASPNETCORE_Kestrel__Certificates__Default__Path
           value: "/dev-cert/localhost.pfx"
         - name: App__SelfUrl
-          value: "https://payment.instarentshop.com"
+          value: "https://payment.instarentbag.com"
         - name: App__CorsOrigins
-          value: "https://webgateway-service,http://webgateway-service,https://webgateway.instarentshop.com,http://webgateway.instarentshop.com"
+          value: "https://webgateway-service,http://webgateway-service,https://webgateway.instarentbag.com,http://webgateway.instarentbag.com"
         - name: ConnectionStrings__InstaRent 
           valueFrom: 
             secretKeyRef:
