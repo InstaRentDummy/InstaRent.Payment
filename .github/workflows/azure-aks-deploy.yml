@@ -156,6 +156,6 @@ jobs:
         action: deploy
         manifests: ${{ env.DEPLOYMENT_MANIFEST_PATH }}
         images: |
-          ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.REPO_NAME }} :${{ github.sha }}
+          ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.REPO_NAME }}:${{ github.sha }}
         imagepullsecrets: |
           ${{ env.IMAGE_PULL_SECRET_NAME }}
